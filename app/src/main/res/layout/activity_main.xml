@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen1">
+
+    <TextView
+        android:id="@+id/DescriptionText"
+        style="@style/DescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen1_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/screen2_topic1"
+        style="@style/Topic"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:onClick="showToast"
+        android:text="@string/screen1_topic_toast"
+        app:layout_constraintEnd_toEndOf="@+id/DescriptionText"
+        app:layout_constraintStart_toStartOf="@+id/DescriptionText"
+        app:layout_constraintTop_toBottomOf="@+id/DescriptionText" />
+
+    <Button
+        android:id="@+id/Topic2"
+        style="@style/Topic"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:onClick="showSnackbar"
+        android:text="@string/screen1_topic_snackbar"
+        app:layout_constraintStart_toStartOf="@+id/screen2_topic1"
+        app:layout_constraintTop_toBottomOf="@+id/screen2_topic1" />
+
+    <Button
+        android:id="@+id/Topic3"
+        style="@style/Topic"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:onClick="scheduleTask"
+        android:text="@string/screen1_topic_jobScheduler"
+        app:layout_constraintStart_toStartOf="@+id/Topic2"
+        app:layout_constraintTop_toBottomOf="@+id/Topic2" />
+
+    <Button
+        android:id="@+id/Topic4"
+        style="@style/Topic"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:onClick="showNotification"
+        android:text="@string/screen1_topic_notification"
+        app:layout_constraintStart_toStartOf="@+id/Topic3"
+        app:layout_constraintTop_toBottomOf="@+id/Topic3" />
+
+</android.support.constraint.ConstraintLayout>

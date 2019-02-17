@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_more"
+        android:orderInCategory="1"
+        android:title="mainMenu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="settings"
+                app:showAsAction="never"></item>
+
+            <item
+                android:id="@+id/menu_refresh"
+                android:icon="@drawable/ic_referesh"
+                android:title="refresh"
+                app:showAsAction="never"></item>
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/add_cart"
+        android:icon="@drawable/ic_add_shopping_cart"
+        android:title="cart"
+        app:showAsAction="always"></item>
+</menu>

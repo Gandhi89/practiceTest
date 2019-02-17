@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TopicDescription"
+        style="@style/DescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/screen2_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/screen2_topic1"
+        style="@style/Topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/screen2_topic_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TopicDescription" />
+
+    <TextView
+        android:id="@+id/screen2_topic2"
+        style="@style/Topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/screen2_topic_TabLayout"
+        app:layout_constraintEnd_toEndOf="@+id/screen2_topic1"
+        app:layout_constraintStart_toStartOf="@+id/screen2_topic1"
+        app:layout_constraintTop_toBottomOf="@+id/screen2_topic1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/screen2_topic_RecyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/screen2_topic2"
+        app:layout_constraintStart_toStartOf="@+id/screen2_topic2"
+        app:layout_constraintTop_toBottomOf="@+id/screen2_topic2" />
+
+
+</android.support.constraint.ConstraintLayout>
+

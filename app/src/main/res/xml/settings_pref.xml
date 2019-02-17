@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="checkBox1"
+        android:summaryOff="no"
+        android:summaryOn="yes"
+        android:title="@string/settingsPref_checkbox"></CheckBoxPreference>
+
+    <ListPreference
+        android:defaultValue="India"
+        android:entries="@array/settings_listPreference_entry"
+        android:entryValues="@array/settings_listPreference_entry_value"
+        android:key="listView1"
+        android:title="Country of origin"></ListPreference>
+
+</PreferenceScreen>
