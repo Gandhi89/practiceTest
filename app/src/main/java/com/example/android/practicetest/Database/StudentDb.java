@@ -24,7 +24,15 @@ public abstract class StudentDb extends RoomDatabase {
 
         }
     };
-
+    
+//     static final Migration MIGRATION_1_2 = new Migration(1, 2) {
+//         @Override
+//         public void migrate(SupportSQLiteDatabase database) {
+//             database.execSQL("CREATE TABLE `student_table` (`studentId` VARCHAR(50), "
+//                     + "`studentName` VARCHAR(50),`Instructor` VARCHAR(50),`Course` VARCHAR(50), PRIMARY KEY(`studentId`))");
+//         }
+//     };
+    
     public static StudentDb getINSTANCE(Context context) {
         if (INSTANCE == null) {
             INSTANCE = Room.databaseBuilder(context, StudentDb.class, "studentDB")
