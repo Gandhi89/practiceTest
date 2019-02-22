@@ -60,7 +60,6 @@ public abstract class StudentDb extends RoomDatabase {
             studentDao.insert(new Student("c0767829", "Jill Gates", "Mukesh Ambani", "Business"));
             studentDao.insert(new Student("c0767599", "Sam Gates", "Mukesh Ambani", "Business"));
             studentDao.insert(new Student("c0767199", "What Gates", "Mukesh Ambani", "Business"));
-            studentDao.insert(new Student("c0767999", "F*ck Gates", "Mukesh Ambani", "Business"));
             studentDao.insert(new Student("c0767399", "Hell Gates", "Mukesh Ambani", "Business"));
             studentDao.insert(new Student("c0765499", "Heaven Gates", "Mukesh Ambani", "Business"));
             studentDao.insert(new Student("c0734299", "Gates", "Mukesh Ambani", "Business"));
